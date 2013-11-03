@@ -3,6 +3,7 @@
 /// <reference path="LatLng.d.ts" />
 /// <reference path="Path.d.ts" />
 /// <reference path="PathOptions.d.ts" />
+/// <reference path="ILayer.d.ts" />
 declare module L {
 
     /**
