@@ -6,6 +6,9 @@
 /// <reference path="ScaleOptions.d.ts" />
 /// <reference path="Map.d.ts" />
 /// <reference path="Class.d.ts" />
+/// <reference path="IEventPowered.d.ts" />
+/// <reference path="ILayer.d.ts" />
+/// <reference path="LeafletEvent.d.ts" />
 declare module L {
 
     export class Control extends Class implements IControl {

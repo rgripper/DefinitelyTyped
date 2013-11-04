@@ -2,7 +2,7 @@
 /// <reference path="LeafletEvent.d.ts" />
 declare module L {
 
-    export interface Leaflet extends LeafletEvent {
+    export interface LeafletGeoJSONEvent extends LeafletEvent {
 
         /**
           * The layer for the GeoJSON feature that is being added to the map.
