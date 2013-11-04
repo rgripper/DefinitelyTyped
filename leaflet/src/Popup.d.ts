@@ -1,4 +1,5 @@
 /// <reference path="ILayer.d.ts" />
+/// <reference path="Class.d.ts" />
 /// <reference path="PopupOptions.d.ts" />
 /// <reference path="Map.d.ts" />
 /// <reference path="LatLng.d.ts" />
@@ -11,7 +12,7 @@ declare module L {
       */
     function popup(options?: PopupOptions, source?: any): Popup;
 
-    export class Popup implements ILayer {
+    export class Popup extends Class implements ILayer {
 
         /**
           * Instantiates a Popup object given an optional options object that describes
