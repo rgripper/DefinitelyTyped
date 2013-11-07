@@ -1681,7 +1681,7 @@ declare module L {
  
 declare module L {
 
-    export interface Leaflet extends LeafletEvent {
+    export interface LeafletGeoJSONEvent extends LeafletEvent {
 
         /**
           * The layer for the GeoJSON feature that is being added to the map.
@@ -3237,7 +3237,7 @@ declare module L {
         /**
           * Returns a GeoJSON representation of the polyline (GeoJSON LineString Feature).
           */
-        toGeoJSON();
+        toGeoJSON(): any;
     }
 }
  
@@ -3285,7 +3285,7 @@ declare module L {
       */
     function popup(options?: PopupOptions, source?: any): Popup;
 
-    export class Popup implements ILayer {
+    export class Popup extends Class implements ILayer {
 
         /**
           * Instantiates a Popup object given an optional options object that describes

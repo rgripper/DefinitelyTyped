@@ -48,6 +48,6 @@ declare module L {
         /**
           * Returns a GeoJSON representation of the polyline (GeoJSON LineString Feature).
           */
-        toGeoJSON();
+        toGeoJSON(): any;
     }
 }
