@@ -130,7 +130,7 @@ declare module L {
         fire(type: string, data?: any): Path;
 		addEventListener(eventMap: any, context?: any): Path;
         removeEventListener(eventMap?: any, context?: any): Path;
-        cleanAllEventListeners(): Path
+        clearAllEventListeners(): Path
         on(eventMap: any, context?: any): Path;
         off(eventMap?: any, context?: any): Path;
     }

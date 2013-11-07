@@ -85,7 +85,7 @@ declare module L {
         fire(type: string, data?: any): TileLayer;
 		addEventListener(eventMap: any, context?: any): TileLayer;
         removeEventListener(eventMap?: any, context?: any): TileLayer;
-        cleanAllEventListeners(): TileLayer
+        clearAllEventListeners(): TileLayer
         on(eventMap: any, context?: any): TileLayer;
         off(eventMap?: any, context?: any): TileLayer;
     }

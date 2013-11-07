@@ -130,7 +130,7 @@ declare module L {
             off(type: string, fn?: (e: LeafletEvent) => void, context?: any): Layers;
             fire(type: string, data?: any): Layers; addEventListener(eventMap: any, context?: any): Layers;
             removeEventListener(eventMap?: any, context?: any): Layers;
-            cleanAllEventListeners(): Layers
+            clearAllEventListeners(): Layers
             on(eventMap: any, context?: any): Layers;
             off(eventMap?: any, context?: any): Layers;
         }

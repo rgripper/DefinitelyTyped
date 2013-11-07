@@ -32,7 +32,7 @@ declare module L {
         fire(type: string, data?: any): PosAnimation;
 		addEventListener(eventMap: any, context?: any): PosAnimation;
         removeEventListener(eventMap?: any, context?: any): PosAnimation;
-        cleanAllEventListeners(): PosAnimation
+        clearAllEventListeners(): PosAnimation
         on(eventMap: any, context?: any): PosAnimation;
         off(eventMap?: any, context?: any): PosAnimation;
     }

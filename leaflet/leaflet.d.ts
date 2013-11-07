@@ -420,7 +420,7 @@ declare module L {
             off(type: string, fn?: (e: LeafletEvent) => void, context?: any): Layers;
             fire(type: string, data?: any): Layers; addEventListener(eventMap: any, context?: any): Layers;
             removeEventListener(eventMap?: any, context?: any): Layers;
-            cleanAllEventListeners(): Layers
+            clearAllEventListeners(): Layers
             on(eventMap: any, context?: any): Layers;
             off(eventMap?: any, context?: any): Layers;
         }
@@ -760,7 +760,7 @@ declare module L {
         fire(type: string, data?: any): Draggable;
 		addEventListener(eventMap: any, context?: any): Draggable;
         removeEventListener(eventMap?: any, context?: any): Draggable;
-        cleanAllEventListeners(): Draggable
+        clearAllEventListeners(): Draggable
         on(eventMap: any, context?: any): Draggable;
         off(eventMap?: any, context?: any): Draggable;
     }
@@ -837,7 +837,7 @@ declare module L {
         fire(type: string, data?: any): FeatureGroup;
 		addEventListener(eventMap: any, context?: any): FeatureGroup;
         removeEventListener(eventMap?: any, context?: any): FeatureGroup;
-        cleanAllEventListeners(): FeatureGroup
+        clearAllEventListeners(): FeatureGroup
         on(eventMap: any, context?: any): FeatureGroup;
         off(eventMap?: any, context?: any): FeatureGroup;
     }
@@ -1178,7 +1178,7 @@ declare module L {
         /**
           * Removes all listeners to all events on the object.
           */
-        cleanAllEventListeners()
+        clearAllEventListeners(): T;
 
         /**
           * Alias to addEventListener.
@@ -2237,7 +2237,7 @@ declare module L {
           * Runs the given callback when the map gets initialized with a place and zoom,
           * or immediately if it happened already, optionally passing a function context.
           */
-        whenReady(fn: (Map) => void, context?: any): Map;
+        whenReady(fn: (map: Map) => void, context?: any): Map;
     
         // Properties
 
@@ -2299,7 +2299,7 @@ declare module L {
         off(type: string, fn?: (e: LeafletEvent) => void, context?: any): Map;
         fire(type: string, data?: any): Map;addEventListener(eventMap: any, context?: any): Map;
         removeEventListener(eventMap?: any, context?: any): Map;
-        cleanAllEventListeners(): Map
+        clearAllEventListeners(): Map
         on(eventMap: any, context?: any): Map;
         off(eventMap?: any, context?: any): Map;
     }
@@ -2706,7 +2706,7 @@ declare module L {
         fire(type: string, data?: any): Marker;
 		addEventListener(eventMap: any, context?: any): Marker;
         removeEventListener(eventMap?: any, context?: any): Marker;
-        cleanAllEventListeners(): Marker
+        clearAllEventListeners(): Marker
         on(eventMap: any, context?: any): Marker;
         off(eventMap?: any, context?: any): Marker;
     }
@@ -3012,7 +3012,7 @@ declare module L {
         fire(type: string, data?: any): Path;
 		addEventListener(eventMap: any, context?: any): Path;
         removeEventListener(eventMap?: any, context?: any): Path;
-        cleanAllEventListeners(): Path
+        clearAllEventListeners(): Path
         on(eventMap: any, context?: any): Path;
         off(eventMap?: any, context?: any): Path;
     }
@@ -3437,7 +3437,7 @@ declare module L {
         fire(type: string, data?: any): PosAnimation;
 		addEventListener(eventMap: any, context?: any): PosAnimation;
         removeEventListener(eventMap?: any, context?: any): PosAnimation;
-        cleanAllEventListeners(): PosAnimation
+        clearAllEventListeners(): PosAnimation
         on(eventMap: any, context?: any): PosAnimation;
         off(eventMap?: any, context?: any): PosAnimation;
     }
@@ -3611,7 +3611,7 @@ declare module L {
         fire(type: string, data?: any): TileLayer;
 		addEventListener(eventMap: any, context?: any): TileLayer;
         removeEventListener(eventMap?: any, context?: any): TileLayer;
-        cleanAllEventListeners(): TileLayer
+        clearAllEventListeners(): TileLayer
         on(eventMap: any, context?: any): TileLayer;
         off(eventMap?: any, context?: any): TileLayer;
     }

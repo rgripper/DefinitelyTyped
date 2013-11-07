@@ -77,7 +77,7 @@ declare module L {
         fire(type: string, data?: any): FeatureGroup;
 		addEventListener(eventMap: any, context?: any): FeatureGroup;
         removeEventListener(eventMap?: any, context?: any): FeatureGroup;
-        cleanAllEventListeners(): FeatureGroup
+        clearAllEventListeners(): FeatureGroup
         on(eventMap: any, context?: any): FeatureGroup;
         off(eventMap?: any, context?: any): FeatureGroup;
     }

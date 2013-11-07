@@ -331,7 +331,7 @@ declare module L {
           * Runs the given callback when the map gets initialized with a place and zoom,
           * or immediately if it happened already, optionally passing a function context.
           */
-        whenReady(fn: (Map) => void, context?: any): Map;
+        whenReady(fn: (map: Map) => void, context?: any): Map;
     
         // Properties
 
@@ -394,7 +394,7 @@ declare module L {
         off(type: string, fn?: (e: LeafletEvent) => void, context?: any): Map;
         fire(type: string, data?: any): Map;addEventListener(eventMap: any, context?: any): Map;
         removeEventListener(eventMap?: any, context?: any): Map;
-        cleanAllEventListeners(): Map
+        clearAllEventListeners(): Map
         on(eventMap: any, context?: any): Map;
         off(eventMap?: any, context?: any): Map;
     }

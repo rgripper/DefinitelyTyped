@@ -141,7 +141,7 @@ declare module L {
         fire(type: string, data?: any): Marker;
 		addEventListener(eventMap: any, context?: any): Marker;
         removeEventListener(eventMap?: any, context?: any): Marker;
-        cleanAllEventListeners(): Marker
+        clearAllEventListeners(): Marker
         on(eventMap: any, context?: any): Marker;
         off(eventMap?: any, context?: any): Marker;
     }

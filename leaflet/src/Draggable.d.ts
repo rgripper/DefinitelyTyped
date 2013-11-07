@@ -41,7 +41,7 @@ declare module L {
         fire(type: string, data?: any): Draggable;
 		addEventListener(eventMap: any, context?: any): Draggable;
         removeEventListener(eventMap?: any, context?: any): Draggable;
-        cleanAllEventListeners(): Draggable
+        clearAllEventListeners(): Draggable
         on(eventMap: any, context?: any): Draggable;
         off(eventMap?: any, context?: any): Draggable;
     }

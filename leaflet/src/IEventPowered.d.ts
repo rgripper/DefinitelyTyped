@@ -45,7 +45,7 @@ declare module L {
         /**
           * Removes all listeners to all events on the object.
           */
-        cleanAllEventListeners()
+        clearAllEventListeners(): T;
 
         /**
           * Alias to addEventListener.
